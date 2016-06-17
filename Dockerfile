@@ -10,7 +10,6 @@ RUN apt-get autoremove -y \
     && apt-get autoclean \
     && apt-get clean
 
-
 WORKDIR /root
 
 RUN git clone https://github.com/wolf9466/cpuminer-multi
@@ -25,7 +24,5 @@ COPY entry.sh /
 RUN chmod +x /entry.sh
 
 WORKDIR /root
-
-EXPOSE 45560
 
 ENTRYPOINT ["/entry.sh"]

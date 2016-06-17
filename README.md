@@ -1,4 +1,4 @@
-# Containerized CPU Miner for Minergate
+# Docker Multi CPU Miner for Minergate
 
 uses wolf9466/cpuminer-multi
 
@@ -7,8 +7,10 @@ a docker host
 
 ## run
 ```
-docker pull weop/dminer
-docker run -d --name dm -e "EMAIL=your@emailaddress.com" dminer;
+docker run -d --name dm \
+-e "EMAIL=your@emailaddress.com" \
+-e "CURR=XMR" \
+weop/dminer;
 ```
 
 ## stop 
