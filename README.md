@@ -7,11 +7,11 @@ a docker host
 
 ## run
 ```
-docker build -t dm 
+docker pull weop/dminer
 docker run -d --name dm -e "EMAIL=your@emailaddress.com" dminer;
 ```
 
-##stop 
+## stop 
 ```
 docker kill dm && docker rm dm
 ```
